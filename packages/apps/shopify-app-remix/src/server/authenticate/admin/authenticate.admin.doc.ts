@@ -32,6 +32,7 @@ const data: ReferenceEntityTemplateSchema = {
     'EmbeddedAdminContext',
     'AdminApiContext',
     'BillingContext',
+    'ScopesApiContext',
   ],
   related: [
     {
