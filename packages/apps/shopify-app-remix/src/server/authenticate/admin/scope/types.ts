@@ -60,11 +60,7 @@ export interface ScopesApiContext {
   /**
    * Requests the merchant to grant the provided scopes for this app on this shop
    *
-   * // TODO: I think we can omit the other error cases as they are pre-reqs (i.e. scopes deployed to Shopify, malformed access scope,.. )
-   *    We will add discoverable references to managing your scopes section to ensure developers understand what this feature and the pre-reqs are in case they discover it first via this page 
-   *    
    * **Warning** This method performs a server-side redirect.
-   * // TODO: should we link to managing your scopes section to ensure they deployed?
    * We recommend you do your own validation to ensure that the optional scopes being requested have not been granted.
    *
    * @example
@@ -149,10 +145,7 @@ export interface ScopesApiContext {
    *
    *  try {
    *    const revokedResponse = await scopes.revoke(scopesToRevoke.toArray());
-   *    console.log("Revoked response:", revokedResponse);
-   *
-   *    const queryResponse = await scopes.query();
-   *    return json({scopesDetail : queryResponse});
+   *    return json(revokedResponse);
    *  } catch (e) {
    *    console.log(JSON.stringify(e));
    *    return json({});
