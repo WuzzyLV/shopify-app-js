@@ -5,7 +5,7 @@ export interface ScopesApiContext {
   /**
    * Queries Shopify for the scopes for this app on this shop
    *
-   * @returns The scope details.
+   * @returns {ScopesDetail} The scope details.
    *
    * @example
    * <caption>Query for scopes details.</caption>
@@ -215,5 +215,8 @@ export interface ScopesRequestResponse {
 }
 
 export interface ScopesRevokeResponse {
+  /**
+   * The scopes that have been revoked on the shop for this app
+   */
   revoked: Scope[];
 }
