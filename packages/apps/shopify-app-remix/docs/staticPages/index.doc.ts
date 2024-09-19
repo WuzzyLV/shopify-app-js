@@ -170,7 +170,8 @@ const data: LandingTemplateSchema = {
         "\n\n1. Enable [Shopify managed installation](https://shopify.dev/docs/apps/auth/installation#shopify-managed-installation)" +
         " by configuring your scopes [through the Shopify CLI](https://shopify.dev/docs/apps/tools/cli/configuration)." +
         "\n2. Enable the future flag `unstable_newEmbeddedAuthStrategy` in your app's server configuration file." +
-        "\n3. Enjoy no-redirect OAuth flow, and app installation process.",
+        "\n3. Enjoy no-redirect OAuth flow, and app installation process." +
+        "\n\n> Tip: If you wish to learn about scopes management and configuration for Step 1, please read through [Managing Access Scopes](https://shopify.dev/docs/apps/build/authentication-authorization/app-installation/managing-access-scopes) and the [Scopes API](https://shopify.dev/docs/api/shopify-app-remix/v3/apis/scopes)",
       codeblock: {
         title: 'Enabling the new embedded auth strategy',
         tabs: [
