@@ -64,7 +64,7 @@ export interface ScopesApiContext {
    * We recommend you do your own validation to ensure that the optional scopes being requested have not been granted.
    *
    * @example
-   * <caption>Request for optional scopes.</caption>
+   * <caption>Request consent from the merchant to grant the provided scopes for this app.</caption>
    * <description>Call `scopes.request` to get request optional scopes.</description>
    * ```ts
    * // /app/routes/app.request.tsx
