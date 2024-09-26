@@ -46,9 +46,6 @@ export interface ScopesApiContext {
    * import { LATEST_API_VERSION, shopifyApp } from "@shopify/shopify-app-remix/server";
    *
    * const shopify = shopifyApp({
-   *   future: {
-   *     unstable_optionalScopesApi: true,
-   *   },
    *   // ...etc
    * });
    * export default shopify;
@@ -107,9 +104,6 @@ export interface ScopesApiContext {
    * import { LATEST_API_VERSION, shopifyApp } from "@shopify/shopify-app-remix/server";
    *
    * const shopify = shopifyApp({
-   *   future: {
-   *     unstable_optionalScopesApi: true,
-   *   },
    *   // ...etc
    * });
    * export default shopify;
@@ -172,9 +166,6 @@ export interface ScopesApiContext {
    * import { LATEST_API_VERSION, shopifyApp } from "@shopify/shopify-app-remix/server";
    *
    * const shopify = shopifyApp({
-   *   future: {
-   *     unstable_optionalScopesApi: true,
-   *   },
    *   // ...etc
    * });
    * export default shopify;
