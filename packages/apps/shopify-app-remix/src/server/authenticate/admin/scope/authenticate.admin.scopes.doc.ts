@@ -3,7 +3,7 @@ import {ReferenceEntityTemplateSchema} from '@shopify/generate-docs';
 const data: ReferenceEntityTemplateSchema = {
   name: 'Scopes',
   description:
-    'Contains functions used to manage optional scopes for your app.\n\nThis object is returned on authenticated Admin requests.',
+    'Contains functions used to manage scopes for your app.\n\nThis object is returned on authenticated Admin requests.',
   category: 'APIs',
   type: 'object',
   isVisualComponent: false,
@@ -11,7 +11,7 @@ const data: ReferenceEntityTemplateSchema = {
     {
       title: 'scopes',
       description:
-        'Provides utilities that apps can use to manage optional scopes for the app using the Admin API.',
+        'Provides utilities that apps can use to manage scopes for the app using the Admin API.',
       type: 'ScopesApiContext',
     },
   ],
