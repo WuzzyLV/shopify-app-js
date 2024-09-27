@@ -27,21 +27,6 @@ export interface ScopesApiContext {
    *}
    * ```
    * ```ts
-   * // /app/routes/**\/*.tsx
-   *const handleQueryClick = () => {
-   *  fetcher.submit({}, {
-   *    action: "query",
-   *    method: "POST",
-   *  });
-   *};
-   *
-   *return(
-   *  <Button onClick={handleQueryClick}>
-   *    Query
-   *  </Button>
-   *);
-   * ```
-   * ```ts
    * // /app/shopify.server.ts
    * import { LATEST_API_VERSION, shopifyApp } from "@shopify/shopify-app-remix/server";
    *
@@ -82,21 +67,6 @@ export interface ScopesApiContext {
    *  // nothing to grant
    *  return json({});
    *}
-   * ```
-   * ```ts
-   * // /app/routes/**\/*.tsx
-   *const handleRequestClick = () => {
-   *  fetcher.submit({scopes: ["write_products"]}, {
-   *    action: "request",
-   *    method: "POST",
-   *  });
-   *};
-   *
-   *return(
-   *  <Button onClick={handleRequestClick}>
-   *    Request
-   *  </Button>
-   *);
    * ```
    * ```ts
    * // /app/shopify.server.ts
@@ -144,21 +114,6 @@ export interface ScopesApiContext {
    *    return json({});
    *  }
    *}
-   * ```
-   * ```ts
-   * // /app/routes/**\/*.tsx
-   *const handleRevokeClick = () => {
-   *  fetcher.submit({scopes: ["write_products"]}, {
-   *    action: "revoke",
-   *    method: "POST",
-   *  });
-   *};
-   *
-   *return(
-   *  <Button onClick={handleRevokeClick}>
-   *    Revoke
-   *  </Button>
-   *);
    * ```
    * ```ts
    * // /app/shopify.server.ts
