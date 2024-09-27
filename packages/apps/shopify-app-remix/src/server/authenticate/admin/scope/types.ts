@@ -46,7 +46,7 @@ export interface ScopesApiContext {
    *
    * @example
    * <caption>Request consent from the merchant to grant the provided scopes for this app.</caption>
-   * <description>Call `scopes.request` to get request optional scopes.</description>
+   * <description>Call `scopes.request` to request optional scopes.</description>
    * ```ts
    * // /app/routes/app.request.tsx
    *import type { ActionFunctionArgs } from "@remix-run/node";
