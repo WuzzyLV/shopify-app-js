@@ -42,7 +42,7 @@ export interface ScopesApiContext {
   /**
    * Requests the merchant to grant the provided scopes for this app on this shop
    *
-   * **Warning** This method performs a server-side redirect.
+   * **Warning:** This method performs a server-side redirect.
    *
    * @example
    * <caption>Request consent from the merchant to grant the provided scopes for this app.</caption>
@@ -84,7 +84,7 @@ export interface ScopesApiContext {
   /**
    * Revokes the provided scopes from this app on this shop
    *
-   * **Warning** We recommend you do your own validation to ensure that the optional scopes being requested are valid.
+   * **Warning:** We recommend you do your own validation to ensure that the optional scopes being requested are valid.
    * This method throws an error if the provided optional scopes contains a required scope.
    *
    * @example
