@@ -12,14 +12,14 @@ export interface ScopesApiContext {
    * <description>Call `scopes.query` to get scope details.</description>
    * ```ts
    * // /app/routes/app.query.tsx
-   *import type { ActionFunctionArgs } from "@remix-run/node";
+   *import type { LoaderFunctionArgs } from "@remix-run/node";
    *import { json } from "@remix-run/node";
    *
    *import { authenticate } from "../shopify.server";
    *
-   *export async function action({
+   *export async function loader({
    *  request,
-   *}: ActionFunctionArgs) {
+   *}: LoaderFunctionArgs) {
    *  const { scopes } = await authenticate.admin(request);
    *
    *  const response = await scopes.query();
@@ -49,14 +49,14 @@ export interface ScopesApiContext {
    * <description>Call `scopes.request` to request optional scopes.</description>
    * ```ts
    * // /app/routes/app.request.tsx
-   *import type { ActionFunctionArgs } from "@remix-run/node";
+   *import type { LoaderFunctionArgs } from "@remix-run/node";
    *import { json } from "@remix-run/node";
    *
    *import { authenticate } from "../shopify.server";
    *import { AuthScopes } from "@shopify/shopify-api";
-   *export async function action({
+   *export async function loader({
    *  request,
-   *}: ActionFunctionArgs) {
+   *}: LoaderFunctionArgs) {
    *  const { scopes } = await authenticate.admin(request);
    *
    *  const body = await request.formData();
@@ -92,14 +92,14 @@ export interface ScopesApiContext {
    * <description>Call `scopes.revoke` to revoke optional scopes.</description>
    * ```ts
    * // /app/routes/app.revoke.tsx
-   *import type { ActionFunctionArgs } from "@remix-run/node";
+   *import type { LoaderFunctionArgs } from "@remix-run/node";
    *import { json } from "@remix-run/node";
    *import { authenticate } from "../shopify.server";
    *import { AuthScopes } from "@shopify/shopify-api";
    *
-   *export async function action({
+   *export async function loader({
    *  request,
-   *}: ActionFunctionArgs) {
+   *}: LoaderFunctionArgs) {
    *  const { scopes } = await authenticate.admin(request);
    *
    *  const body = await request.formData();
